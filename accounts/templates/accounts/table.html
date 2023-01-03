@@ -1,0 +1,507 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>مەڭگۈتەك |  سۆزلۈكلەر</title>
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/prettyPhoto.css' %}" rel="stylesheet">
+    <link href="{% static 'css/price-range.css' %}" rel="stylesheet">
+    <link href="{% static 'css/animate.css' %}" rel="stylesheet">
+	<link href="{% static 'css/main.css' %}" rel="stylesheet">
+	<link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="{% static 'images/ico/favicon.ico' %}">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{% static 'images/ico/apple-touch-icon-144-precomposed.png' %}">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{% static 'images/ico/apple-touch-icon-114-precomposed.png' %}">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{% static 'images/ico/apple-touch-icon-72-precomposed.png' %}">
+    <link rel="apple-touch-icon-precomposed" href="{% static 'images/ico/apple-touch-icon-57-precomposed.png' %}">
+</head><!--/head-->
+
+<body>
+	<header id="header"><!--header-->
+		<div class="header_top"><!--header_top-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="contactinfo">
+							<!--
+							<ul class="nav nav-pills">
+								<li><a href="#"><i class="fa fa-phone"></i> +2 95 01 88 821</a></li>
+								<li><a href="#"><i class="fa fa-envelope"></i> prof.Mamatjan@nobel.com</a></li>
+							</ul>-->
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="social-icons pull-right">
+							<ul class="nav navbar-nav">
+								<li><a href="https://www.youtube.com/@mengutech"><i class="fa fa-youtube"></i></a></li>
+								<li><a href="https://www.uyghurstem.com/"><img src="{% static 'images/home/uyghur-stem.png' %}" alt="" style="max-width: 45px;"></a></li>
+								<!--<li><a href="https://www.instagram.com/uyghur.stem/?hl=en"><i class="fa fa-instagram"></i></a></li>-->
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/header_top-->
+		
+		<div class="header-middle"><!--header-middle-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="logo pull-left">
+							<a href="{% url 'home' %}"><img src="{% static 'images/home/logo.png' %}" alt="" /></a>
+						</div>
+						<div class="btn-group pull-right">
+							<!--<div class="btn-group">
+								<button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
+									ئۇيغۇر تىلىدا
+									<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu">
+									<li><a href="#">Uighurche</a></li>
+									<li><a href="#">Uighurche</a></li>
+								</ul>
+							</div>-->
+							<div class="btn-group">
+								<a href="{% url 'english' %}">
+								<button type="button" class="btn btn-default" style="font-size: large;">
+									English
+								</button>
+							</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-8">
+						<div class="shop-menu pull-right">
+							<ul class="nav navbar-nav">
+								<li><a href="{% url 'about' %}"><i class="fa fa-user"></i> مەڭگۈتەك</a></li>
+								<li><a href="#"><i class="fa fa-star"></i>باشقا مەزمۇنلار</a></li>
+
+								<li><a href="#"><i class="fa fa-crosshairs"></i>ئالاقىلىشىڭ</a></li>
+								<li><a href="#"><i class="fa fa-star"></i>تىزىملىتىڭ</a></li>
+								
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/header-middle-->
+	
+		<div class="header-bottom"><!--header-bottom-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-9">
+						<div class="navbar-header">
+							
+						</div>
+						<div class="mainmenu pull-left">
+							<ul class="nav navbar-nav collapse navbar-collapse">
+								<li><a href="{% url 'home' %}" class="active" style="font-size: x-large;">باش بەت</a></li>
+								<li class="dropdown"><a href="#" style="font-size: x-large;">دەرسلەر<i class="fa fa-angle-down"></i></a>
+                                    <ul role="menu" class="sub-menu">
+                                        <li><a href="{% url 'introduction' %}">مۇقەددىمە</a></li>
+                                        <li><a href="{% url 'arduino-ide' %}">ئاردۇينو ئىجادىيەت مۇھىتى</a></li>
+										<li><a href="{% url 'first-class'%}">بىرىنجى دەرس </a></li> 
+										<li><a href="{% url 'second-class' %}">ئىككىنجى دەرس</a></li> 
+                                    </ul>
+                                </li> 
+								<li><a href="{% url 'about' %}" style="font-size: x-large;">بىزگە ئائىت</a></li>
+                                <li><a href="{% url 'rules-and-timeline' %}" style="font-size: x-large;">قائىدە- تۈزۈم</a></li>
+								
+                                <li><a href="{% url 'plan' %}" style="font-size: x-large;">پىلان</a></li>
+								<li><a href="{% url 'table' %}" style="font-size: x-large;">سۆزلۈكلەر</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/header-bottom-->
+	</header><!--/header-->
+	
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="left-sidebar">
+						<h2 style="font-size: x-large;">دەرسلەر</h2>
+						<div class="panel-group category-products" id="accordian"><!--category-productsr-->
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title"><button class="btn btn-link"><a href="{% url 'introduction' %}" style="font-size: x-large;"> مۇقەددىمە</a></button></h4>
+								</div>
+							</div>
+                            <div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title"><button class="btn btn-link"><a href="{% url 'arduino-ide' %}" style="font-size: x-large;">ئاردۇينو ئىجادىيەت مۇھىتى</a></button></h4>
+								</div>
+							</div>
+                            <div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title"><button class="btn btn-link"><a href="{% url 'electricity' %}" style="font-size: x-large;"> توك ئۇقۇملىرى</a></button></h4>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">									
+									<h4 class="panel-title"><button class="btn btn-link"><a href="{% url 'first-class' %}" style="font-size: x-large;"> بىرىنجى دەرس</a></button></h4>
+
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title"><button class="btn btn-link"><a href="{% url 'second-class' %}" style="font-size: x-large;"> ئىككىنجى دەرس</a></button></h4>
+								</div>
+							</div>
+                            <div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title"><button class="btn btn-link"><a href="{% url 'digitaloutput' %}" style="font-size: x-large;">ئاساسى بۇيرۇقلار</a></button></h4>
+									
+								</div>
+							</div>
+						</div><!--/category-products-->
+						<div class="brands_products"><!--brands_products-->
+							<h2 style="font-size: x-large;">پايدىلىق ئۇلانمىلار</h2>
+							<div class="brands-name">
+								<ul class="nav nav-pills nav-stacked">
+									<li><button class = "btn btn-link"><a href="https://www.tinkercad.com/circuits" style="font-size: large;">TinkerCad</a></button></li>
+									<li><button class = "btn btn-link"><a href="https://www.arduino.cc/en/software" style="font-size: large;">Run Arduino</button></a></li>
+                                    <li><button class = "btn btn-link"><a href="https://www.exploringarduino.com/" style="font-size: large;">Exploring Arduino</a></button></li>
+                                    <li><button class = "btn btn-link"><a href="https://wiki.nus.edu.sg/display/Arduino/Arduino" style="font-size: large;" >Arduino Tutorial</a></button></li>
+                                    <li><button class = "btn btn-link"><a href="https://docs.arduino.cc/hardware/mega-2560" style="font-size: large;">Arduino Documentation</a></button></li>
+                                    <li><button class = "btn btn-link"><a href="https://www.youtube.com/watch?v=1ENiVwk8idM" style="font-size: large;">Arduino in 100 Seconds</a></button></li>
+                                    <li><button class = "btn btn-link"><a href="https://www.amazon.ca/Project-Complete-Ultimate-TUTORIAL-Mega2560/dp/B01EWNUUUA/ref=asc_df_B01EWNUUUA/?tag=googleshopc0c-20&linkCode=df0&hvadid=292982668700&hvpos=&hvnetw=g&hvrand=13022765208931567805&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9001465&hvtargid=pla-587465714317&psc=1" style="font-size: large;">Buy Arduino Kit</a></button></li>
+								</ul>
+							</div>
+						</div><!--/brands_products-->
+					</div>
+				</div>
+                <style>
+                    table {
+                        max-width: 750px;
+                      }
+                      
+                      td, th {
+                        max-width: 300px;
+                      }
+                </style>
+                
+				<div class="col-sm-9">
+                    <table class="table">
+                        <tr>
+                            <th>رەسىم</th>
+                            <th>English</th>
+                            <th>ئۇيغۇرچە</th>
+                        </tr>
+                        <tr>
+                            <td><img src="{% static 'images/table/actuator.webp' %}" alt="" style="max-width:100px;" /></td>
+                            <td>Actuator</td>
+                            <td>قوزغاتقۇچ</td>
+                        </tr>
+                        <tr>
+                            <td><img src="{% static 'images/table/angle.jpg' %}" alt="" style="max-width:100px;" /></td>
+                            <td>Angle Sensor</td>
+                            <td>يانتۇلۇق سەزگۈچ</td>
+                        </tr>
+                        <tr>
+                            <td><img src="{% static 'images/blog/arduinomega.jpg' %}" alt="" style="max-width:100px;" /></td>
+                            <td>Arduino</td>
+                            <td>ئاردۇينو</td>
+                        </tr>
+                        <tr>
+                            <td><img src="{% static 'images/table/bluetooth.jpg' %}" alt="" style="max-width:70px;" /></td>
+                            <td>Bluetooth Module</td>
+                            <td>كۆكچىش مودېلى</td>
+                        </tr>
+                        <tr>
+                            <td><img src="{% static 'images/table/breadboard.jpg' %}" alt="" style="max-width:100px;" /></td>
+                            <td>Breadboard</td>
+                            <td>توك يول تاختىسى</td>
+                        </tr>
+                        <tr>
+                            <td><img src="{% static 'images/table/button.webp' %}" alt="" style="max-width:70px;" /></td>
+                            <td>Button</td>
+                            <td>كۇنۇپكا</td>
+                        </tr>
+                        <tr>
+                            <td><img src="{% static 'images/table/Capacitor.jpg' %}" alt="" style="max-width:100px;" /></td>
+                            <td>Capacitor</td>
+                            <td>كوندې</td>
+                        </tr>
+                        <tr>
+                            <td><img src="{% static 'images/table/color.jpg' %}" alt="" style="max-width:100px;" /></td>
+                            <td>Color Sensor</td>
+                            <td> رەڭنى سېزىش سەزگۈچ</td>
+                        </tr>
+                        <tr>
+                            <td><img src="{% static 'images/table/DC.jpg' %}" alt="" style="max-width:100px;" /></td>
+                            <td>DC Motor</td>
+                            <td>تۇراقلىق توك ماتورى</td>
+                        </tr>
+                        <tr>
+                            <td><img src="{% static 'images/table/debugging.webp' %}" alt="" style="max-width:225px;" /></td>
+                            <td>Debugging</td>
+                            <td>قۇرۇت تۇتۇش</td>
+                        </tr>
+                        <tr>
+                            <td><img src="{% static 'images/table/Frequency.png' %}" alt="" style="max-width:200px;" /></td>
+                            <td>Frequency</td>
+                            <td>چاستوتا</td>
+                        </tr>
+                        <tr>
+                            <td><img src="{% static 'images/table/humidity.avif' %}" alt="" style="max-width:100px;" /></td>
+                            <td>Humidity Sensor</td>
+                            <td> نەملىك سەزگۈچ</td>
+                        </tr>
+                        <tr>
+                            <td><img src="{% static 'images/table/Inductor.jpg' %}" alt="" style="max-width:100px;" /></td>
+                            <td>Inductor</td>
+                            <td>رىئوستات</td>
+                        </tr>
+                        <tr>
+                            <td><img src="{% static 'images/table/infared.webp' %}" alt="" style="max-width:100px;" /></td>
+                            <td>Infared Sensor</td>
+                            <td>ئفىناىرا نۇر سەزگۈچ</td>
+                        </tr>
+                        <tr>
+                            <td><img src="{% static 'images/table/laser.jpg' %}" alt="" style="max-width:100px;" /></td>
+                            <td>Laser Sensor</td>
+                            <td>لازىر نۇر سەزگۈچ</td>
+                        </tr>
+                        <tr>
+                            <td><img src="{% static 'images/table/LED.jpg' %}" alt="" style="max-width:75px;" /></td>
+                            <td>LED Bulb</td>
+                            <td>زىننەت چىراق</td>
+                        </tr>
+                        <tr>
+                            <td><img src="{% static 'images/table/light.jpg' %}" alt="" style="max-width:100px;" /></td>
+                            <td>Light Sensor</td>
+                            <td>چىراق سەزگۈچ</td>
+                        </tr>
+                        <tr>
+                            <td><img src="{% static 'images/table/lcd.jpg' %}" alt="" style="max-width:100px;" /></td>
+                            <td>Liquid Crystal Screen (LCD)</td>
+                            <td>كىرىستال ئىكرانى</td>
+                        </tr>
+                        <tr>
+                            <td><img src="{% static 'images/table/magnet.jpg' %}" alt="" style="max-width:100px;" /></td>
+                            <td>Magnetic Sensor</td>
+                            <td> ماگىنىت سەزگۈچ</td>
+                        </tr>
+                        <tr>
+                            <td><img src="{% static 'images/table/chip.webp' %}" alt="" style="max-width:80px;" /></td>
+                            <td>Microchip</td>
+                            <td>ھىساپلاش رىگىستىرى</td>
+                        </tr>
+                        <tr>
+                            <td><img src="{% static 'images/table/motor_driver.webp' %}" alt="" style="max-width:100px;" /></td>
+                            <td>Motor Driver</td>
+                            <td>قوش يوللۇق قوزغىتىش مودېلى</td>
+                        </tr>
+                        <tr>
+                            <td><img src="{% static 'images/table/Potentiometer.jpg' %}" alt="" style="max-width:90px;" /></td>
+                            <td>Potentiometer</td>
+                            <td>پوتېنسئومىېر</td>
+                        </tr>
+                        <tr>
+                            <td><img src="{% static 'images/table/relay.jpg' %}" alt="" style="max-width:90px;" /></td>
+                            <td>Relay Module</td>
+                            <td>رېلى</td>
+                        </tr>
+                        <tr>
+                            <td><img src="{% static 'images/table/resistor.jpg' %}" alt="" style="max-width:50px;" /></td>
+                            <td>Resistor</td>
+                            <td>قارشىلىق</td>
+                        </tr>
+                        <tr>
+                            <td><img src="{% static 'images/table/rfid.avif' %}" alt="" style="max-width:90px;" /></td>
+                            <td>RFID Reader</td>
+                            <td>كارتىسى RFID </td>
+                        </tr>
+                        <tr>
+                            <td><img src="{% static 'images/table/rgb.webp' %}" alt="" style="max-width:100px;" /></td>
+                            <td>RGB LED Bulb</td>
+                            <td>ئۆچ خىل رەڭلىك لامپا</td>
+                        </tr>
+                        <tr>
+                            <td><img src="{% static 'images/table/sensor.jpg' %}" alt="" style="max-width:100px;" /></td>
+                            <td>Sensor</td>
+                            <td>سەزگۈچ</td>
+                        </tr>
+                        <tr>
+                            <td><img src="{% static 'images/table/servo.webp' %}" alt="" style="max-width:55px;" /></td>
+                            <td>Servo Motor</td>
+                            <td>مۇلازىمىتىر ماتورى</td>
+                        </tr>
+                        <tr>
+                            <td><img src="{% static 'images/table/sketch.webp' %}" alt="" style="max-width:300px;" /></td>
+                            <td>Sketch</td>
+                            <td>پروگرامما ھۆججەتتى</td>
+                        </tr>
+                        <tr>
+                            <td><img src="{% static 'images/table/smoke.webp' %}" alt="" style="max-width:100px;" /></td>
+                            <td>Smoke Sensor</td>
+                            <td>ئىس-تۈتەكنى سىزىش سەزگۈچ</td>
+                        </tr>
+                        <tr>
+                            <td><img src="{% static 'images/table/stepmotor.jpg' %}" alt="" style="max-width:80px;" /></td>
+                            <td>Step Motor</td>
+                            <td>قەدەملىمە ماتورى</td>
+                        </tr> 
+                        <tr>
+                            <td><img src="{% static 'images/table/sound.jpg' %}" alt="" style="max-width:80px;" /></td>
+                            <td>Sound Sensor</td>
+                            <td>ئاۋاز سەزگۈچ</td>
+                        </tr>
+                        <tr>
+                            <td><img src="{% static 'images/table/piezo.jpg' %}" alt="" style="max-width:75px;" /></td>
+                            <td>Speaker / Piezo</td>
+                            <td>ئاۋاز كانىي</td>
+                        </tr>
+                        <tr>
+                            <td><img src="{% static 'images/table/temperature.jpg' %}" alt="" style="max-width:80px;" /></td>
+                            <td>Temperature Sensor</td>
+                            <td>تېمپىراتور سەزگۈچ</td>
+                        </tr> 
+                        <tr>
+                            <td><img src="{% static 'images/table/ultrasound.jpg' %}" alt="" style="max-width:100px;" /></td>
+                            <td>Ultrasound Sensor</td>
+                            <td>ئۇلترا ئاۋاز </td>
+                        </tr>
+                        <tr>
+                            <td><img src="{% static 'images/table/water.jpg' %}" alt="" style="max-width:100px;" /></td>
+                            <td>Water Sensor</td>
+                            <td>سۇ سەزگۈچ</td>
+                            </tr>
+                        <tr>
+                            <td><img src="{% static 'images/table/wires.jpg' %}" alt="" style="max-width:110px;" /></td>
+                            <td>Wire</td>
+                            <td>سىم</td>
+                        </tr>
+                        <tr>
+                            <td><img src="{% static 'images/table/7segment.jpg' %}" alt="" style="max-width:75px;" /></td>
+                            <td>7 - Segment Display</td>
+                            <td>بىر خانلىق سىپىر لامپا</td>
+                        </tr>
+                        <tr>
+                            <td><img src="{% static 'images/table/8v8.jpg' %}" alt="" style="max-width:125px;" /></td>
+                            <td>8*8 Display</td>
+                            <td>8*8 ئېكران</td>
+                        </tr>
+                        <tr>
+                            <td><img src="{% static 'images/table/analog_i.png' %}" alt="" style="max-width:75px;" /></td>
+                            <td>Analog Input</td>
+                            <td>تەقلىد كىرگۈزۈش</td>
+                        </tr>
+                        <tr>
+                            <td><img src="{% static 'images/table/digital_io.png' %}" alt="" style="max-width:40px;" /></td>
+                            <td>Digital I/O (Input/Output)</td>
+                            <td>رەقەملىك ئۇلىنىش</td>
+                        </tr>
+                        <tr>
+                            <td><img src="{% static 'images/table/arduino_ide.webp' %}" alt="" style="max-width:300px;" /></td>
+                            <td>Arduino IDE</td>
+                            <td>ئاردۇينو ئىجادىيەت مۇھىتى</td>
+                        </tr>         
+                        <tr>
+                            <td><img src="{% static 'images/table/comment.png' %}" alt="" style="max-width:300px;" /></td>
+                            <td>Comments</td>
+                            <td>ئىزاھەت</td>
+                        </tr>
+                        <tr>
+                            <td><img src="{% static 'images/table/delay.png' %}" alt="" style="max-width:75px;" /></td>
+                            <td>Delay</td>
+                            <td>كىچىكتۇرۇش</td>
+                        </tr>
+                        <tr>
+                            <td><img src="{% static 'images/table/function.png' %}" alt="" style="max-width:150px;" /></td>
+                            <td>Functions</td>
+                            <td>فونكسىيە</td>
+                        </tr>
+                        <tr>
+                            <td><img src="{% static 'images/table/iteration.png' %}" alt="" style="max-width:200px;" /></td>
+                            <td>Iteration</td>
+                            <td>تەكرارلاش</td>
+                        </tr>
+                        <tr>
+                            <td><img src="{% static 'images/table/selection.png' %}" alt="" style="max-width:200px;" /></td>
+                            <td>Selection</td>
+                            <td>كونترول قىلىش بۇيرۇقلىرى</td>
+                        </tr>
+                        <tr>
+                            <td><img src="{% static 'images/table/statement.png' %}" alt="" style="max-width:220px;" /></td>
+                            <td>Statements</td>
+                            <td>بايانلار</td>
+                        </tr>
+                        <tr>
+                            <td><img src="{% static 'images/table/symbol.png' %}" alt="" style="max-width:125px;" /></td>
+                            <td>Comparing Symbols</td>
+                            <td>سېلىشتۇرما ئەمەل بەلگىلىرى</td>
+                        </tr>
+                        <tr>
+                            <td><img src="{% static 'images/table/variable.png' %}" alt="" style="max-width:150px;" /></td>
+                            <td>Variable</td>
+                            <td>ئۆزگەرگۈچى مىقدار</td>
+                        </tr>
+                    </table>
+				</div>	
+			</div>
+		</div>
+	</section>
+	<footer id="footer"><!--Footer-->
+		<div class="footer-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-5" style="right: -775px;">
+						<div class="companyinfo">
+							<h1><span>مەڭگۈتەك تەربىيەلەش مەركىزى</span></h1>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="text-area text-center">
+							<p></p>
+							<!--description of mengutech goes here-->
+						</div>
+					</div>
+					<div class="col-sm-2" style="top:20px;right: 775px;">
+						<div class="single-widget">
+							<h1 style="font-size: x-large;"> بىزگە ئەگىشىڭ</h1>
+							<ul class="nav nav-pills">
+								<li><a href="https://www.youtube.com/@mengutech"><i class="fa fa-youtube"></i></a></li>
+								<li><a href="https://www.uyghurstem.com/"><img src="{% static 'images/home/uyghur-stem.png' %}" alt="" style="max-width: 20px;"></a></li>
+								<!--<li><a href="https://www.instagram.com/uyghur.stem/?hl=en"><i class="fa fa-instagram"></i></a></li>-->
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<p class="pull-left">Copyright © 2022 Mengutech. All rights reserved.</p>
+				</div>
+			</div>
+		</div>
+		
+	</footer><!--/Footer-->
+	
+	
+
+  
+    <script src="{% static 'js/jquery.js' %}"></script>
+	<script src="{% static 'js/price-range.js' %}"></script>
+	<script src="{% static 'js/jquery.scrollUp.min.js' %}"></script>
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/jquery.prettyPhoto.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
