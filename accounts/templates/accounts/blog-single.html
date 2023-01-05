@@ -114,30 +114,30 @@
 						<div class="navbar-header">
 							
 						</div>
-					
+						<div class="mainmenu pull-left">
+							<ul class="nav navbar-nav collapse navbar-collapse">
+								<li><a href="{% url 'home' %}" class="active" style="font-size: x-large;">باش بەت</a></li>
+								<li class="dropdown"><a href="#" style="font-size: x-large;">دەرسلەر<i class="fa fa-angle-down"></i></a>
+									<ul role="menu" class="sub-menu">
+										<li><a href="{% url 'introduction' %}">مۇقەددىمە</a></li>
+										<li><a href="{% url 'arduino-ide' %}">ئاردۇينو ئىجادىيەت مۇھىتى</a></li>
+										<li><a href="{% url 'first-class'%}">بىرىنجى دەرس </a></li> 
+										<li><a href="{% url 'second-class' %}">ئىككىنجى دەرس</a></li> 
+									</ul>
+								</li> 
+								<li><a href="{% url 'about' %}" style="font-size: x-large;">بىزگە ئائىت</a></li>
+								<li><a href="{% url 'rules-and-timeline' %}" style="font-size: x-large;">قائىدە- تۈزۈم</a></li>
+								
+								<li><a href="{% url 'plan' %}" style="font-size: x-large;">پىلان</a></li>
+								<li><a href="{% url 'table' %}" style="font-size: x-large;">سۆزلۈكلەر</a></li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div><!--/header-bottom-->
 	</header><!--/header-->
-	<div class="mainmenu pull-left">
-		<ul class="nav navbar-nav collapse navbar-collapse">
-			<li><a href="{% url 'home' %}" class="active" style="font-size: x-large;">باش بەت</a></li>
-			<li class="dropdown"><a href="#" style="font-size: x-large;">دەرسلەر<i class="fa fa-angle-down"></i></a>
-				<ul role="menu" class="sub-menu">
-					<li><a href="{% url 'introduction' %}">مۇقەددىمە</a></li>
-					<li><a href="{% url 'arduino-ide' %}">ئاردۇينو ئىجادىيەت مۇھىتى</a></li>
-					<li><a href="{% url 'first-class'%}">بىرىنجى دەرس </a></li> 
-					<li><a href="{% url 'second-class' %}">ئىككىنجى دەرس</a></li> 
-				</ul>
-			</li> 
-			<li><a href="{% url 'about' %}" style="font-size: x-large;">بىزگە ئائىت</a></li>
-			<li><a href="{% url 'rules-and-timeline' %}" style="font-size: x-large;">قائىدە- تۈزۈم</a></li>
-			
-			<li><a href="{% url 'plan' %}" style="font-size: x-large;">پىلان</a></li>
-			<li><a href="{% url 'table' %}" style="font-size: x-large;">سۆزلۈكلەر</a></li>
-		</ul>
-	</div>
+
 	
 	<section>
 		<div class="container">
