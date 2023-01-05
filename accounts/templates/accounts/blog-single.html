@@ -97,7 +97,8 @@
 								<li><a href="#"><i class="fa fa-star"></i>باشقا مەزمۇنلار</a></li>
 
 								<li><a href="#"><i class="fa fa-crosshairs"></i>ئالاقىلىشىڭ</a></li>
-								<li><a href="#"><i class="fa fa-star"></i>تىزىملىتىڭ</a></li>
+								<li><a href="https://www.uyghurstem.com/idea_to_prototype/"><i class="fa fa-star"></i>تىزىملىتىڭ</a></li>
+
 								
 							</ul>
 						</div>
@@ -317,17 +318,17 @@
 								<form method ="post" action="{% url 'introduction' %}" >
 									{% csrf_token %}
 									<div class="blank-arrow">
-										<label>name</label>
+										<label>ئىسىم</label>
 									</div>
 									<span>*</span>
 									<input id="name" name="name" type="text" placeholder="write your name...">
 									<div class="blank-arrow">
-										<label>email </label>
+										<label>ئىلخەت</label>
 									</div>
 									<span>*</span>
 									<input type="email" id="email" name="email"placeholder="your email address...">
 									<div class="blank-arrow">
-										<label>city</label>
+										<label>شەھەر</label>
 									</div>
 									<input   name="city" type="text"  placeholder="current city...">
 								
@@ -337,13 +338,13 @@
 							<div class="col-sm-8">
 								<div class="text-area">
 									<div class="blank-arrow">
-										<label>comment</label>
+										<label>تەكلىپ/پىكىر</label>
 									</div>
 									<span>*</span>
 									 
 									<textarea id="body" name="body" cols="25" rows="11"  ></textarea>
 									 
-									<button name="submit" type="submit" class="btn btn-primary">Submit</button>
+									<button name="submit" type="submit" class="btn btn-primary">ئەۋەتىڭ</button>
 								</div>
 							</div>
 						</div>
