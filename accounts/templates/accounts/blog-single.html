@@ -45,7 +45,7 @@
 						<div class="social-icons pull-right">
 							<ul class="nav navbar-nav">
 								<li><a href="https://www.youtube.com/@mengutech"><i class="fa fa-youtube"></i></a></li>
-								<li><a href="https://www.uyghurstem.com/"><img src="{% static 'images/home/uyghur-stem.png' %}" alt="" style="max-width: 45px;"></a></li>
+								<li><a href="https://www.uyghurstem.com/"><img src="{% static 'images/home/uyghurstem.png' %}" alt="" style="max-width: 50px; padding-top:9px;"></a></li>
 								<!--<li><a href="https://www.instagram.com/uyghur.stem/?hl=en"><i class="fa fa-instagram"></i></a></li>-->
 							</ul>
 						</div>
@@ -114,29 +114,30 @@
 						<div class="navbar-header">
 							
 						</div>
-						<div class="mainmenu pull-left">
-							<ul class="nav navbar-nav collapse navbar-collapse">
-								<li><a href="{% url 'home' %}" class="active" style="font-size: x-large;">باش بەت</a></li>
-								<li class="dropdown"><a href="#" style="font-size: x-large;">دەرسلەر<i class="fa fa-angle-down"></i></a>
-                                    <ul role="menu" class="sub-menu">
-                                        <li><a href="{% url 'introduction' %}">مۇقەددىمە</a></li>
-										<li><a href="{% url 'arduino-ide' %}">ئاردۇينو ئىجادىيەت مۇھىتى</a></li>
-										<li><a href="{% url 'first-class'%}">بىرىنجى دەرس </a></li> 
-										<li><a href="{% url 'second-class' %}">ئىككىنجى دەرس</a></li> 
-                                    </ul>
-                                </li> 
-								<li><a href="{% url 'about' %}" style="font-size: x-large;">بىزگە ئائىت</a></li>
-                                <li><a href="{% url 'rules-and-timeline' %}" style="font-size: x-large;">قائىدە- تۈزۈم</a></li>
-								
-                                <li><a href="{% url 'plan' %}" style="font-size: x-large;">پىلان</a></li>
-								<li><a href="{% url 'table' %}" style="font-size: x-large;">سۆزلۈكلەر</a></li>
-							</ul>
-						</div>
+					
 					</div>
 				</div>
 			</div>
 		</div><!--/header-bottom-->
 	</header><!--/header-->
+	<div class="mainmenu pull-left">
+		<ul class="nav navbar-nav collapse navbar-collapse">
+			<li><a href="{% url 'home' %}" class="active" style="font-size: x-large;">باش بەت</a></li>
+			<li class="dropdown"><a href="#" style="font-size: x-large;">دەرسلەر<i class="fa fa-angle-down"></i></a>
+				<ul role="menu" class="sub-menu">
+					<li><a href="{% url 'introduction' %}">مۇقەددىمە</a></li>
+					<li><a href="{% url 'arduino-ide' %}">ئاردۇينو ئىجادىيەت مۇھىتى</a></li>
+					<li><a href="{% url 'first-class'%}">بىرىنجى دەرس </a></li> 
+					<li><a href="{% url 'second-class' %}">ئىككىنجى دەرس</a></li> 
+				</ul>
+			</li> 
+			<li><a href="{% url 'about' %}" style="font-size: x-large;">بىزگە ئائىت</a></li>
+			<li><a href="{% url 'rules-and-timeline' %}" style="font-size: x-large;">قائىدە- تۈزۈم</a></li>
+			
+			<li><a href="{% url 'plan' %}" style="font-size: x-large;">پىلان</a></li>
+			<li><a href="{% url 'table' %}" style="font-size: x-large;">سۆزلۈكلەر</a></li>
+		</ul>
+	</div>
 	
 	<section>
 		<div class="container">
@@ -175,7 +176,6 @@
 							<div class="panel panel-default">
 								<div class="panel-heading">
 									<h4 class="panel-title"><button class="btn btn-link"><a href="{% url 'digitaloutput' %}" style="font-size: x-large;">ئاساسى بۇيرۇقلار</a></button></h4>
-									
 								</div>
 							</div>
 						</div><!--/category-products-->
@@ -380,8 +380,8 @@
 						<div class="single-widget">
 							<h1 style="font-size: x-large;"> بىزگە ئەگىشىڭ</h1>
 							<ul class="nav nav-pills">
-								<li><a href="https://www.youtube.com/@mengutech"><i class="fa fa-youtube"></i></a></li>
-								<li><a href="https://www.uyghurstem.com/"><img src="{% static 'images/home/uyghur-stem.png' %}" alt="" style="max-width: 20px;"></a></li>
+								<li><a href="https://www.youtube.com/@mengutech"><i class="fa fa-youtube fa-2x"></i></a></li>
+								<li><a href="https://www.uyghurstem.com/"><img src="{% static 'images/home/uyghurstem.png' %}" alt="" style="max-width: 50px;"></a></li>
 								<!--<li><a href="https://www.instagram.com/uyghur.stem/?hl=en"><i class="fa fa-instagram"></i></a></li>-->
 							</ul>
 						</div>
