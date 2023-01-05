@@ -29,6 +29,7 @@ urlpatterns = [
     path('second-class/', views.secondclass, name="second-class"),
     path('third-class/', views.thirdclass, name="third-class"),
     path('fourth-class/', views.fourthclass, name="fourth-class"),
+    path('contact/', views.contact, name="contact"),
   
     
     

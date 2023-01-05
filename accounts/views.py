@@ -143,10 +143,22 @@ def fourthclass(request):
       #change the comment number below and in comment_list  
         en = comment4(name=name,comment_body=body,email=email,city=city)
         en.save()
-         
-    
+             
     Comment_list= comment4.objects.all()
     return render(request, 'accounts/fourthclass.html',  {'Comment_list':Comment_list})
+
+def contact(request):
+    if request.method == "POST":
+        name= request.POST.get('name')
+        email= request.POST.get('email')
+        city= request.POST.get('city')
+        body= request.POST.get('body')
+      #change the comment number below and in comment_list  
+        en = comment5(name=name,comment_body=body,email=email,city=city)
+        en.save()
+             
+    Comment_list= comment5.objects.all()
+    return render(request, 'accounts/contact.html',  {'Comment_list':Comment_list})
 
 
 

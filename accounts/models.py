@@ -72,6 +72,7 @@ class comment5(models.Model):
     def __str__(self):
         return  self.name
 
+
 class comment6(models.Model):
    
     name = models.CharField(max_length=200)
