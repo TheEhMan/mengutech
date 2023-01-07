@@ -107,11 +107,13 @@
 							<ul class="nav navbar-nav collapse navbar-collapse">
 								<li><a href="{% url 'home' %}" class="active" style="font-size: x-large;">باش بەت</a></li>
 								<li class="dropdown"><a href="#" style="font-size: x-large;">دەرسلەر<i class="fa fa-angle-down"></i></a>
-                                    <ul role="menu" class="sub-menu">
+									<ul role="menu" class="sub-menu">
                                         <li><a href="{% url 'introduction' %}">مۇقەددىمە</a></li>
 										<li><a href="{% url 'arduino-ide' %}">ئاردۇينو ئىجادىيەت مۇھىتى</a></li>
-										<li><a href="{% url 'first-class'%}">بىرىنجى دەرس </a></li> 
-										<li><a href="{% url 'second-class' %}">ئىككىنجى دەرس</a></li> 
+										<li><a href="{% url 'electricity' %}">توك ئۇقۇملىرى</a></li>
+										<li><a href="{% url 'first-class'%}">تىنكىركاد (TinkerCad)</a></li> 
+										<li><a href="{% url 'second-class' %}">پروگرامما ئاساسلىرى</a></li> 
+										<li><a href="{% url 'second-class' %}">ئاردۇينو بۇيرۇقلىرى</a></li> 
                                     </ul>
                                 </li> 
 								<li><a href="{% url 'about' %}" style="font-size: x-large;">بىزگە ئائىت</a></li>
@@ -257,8 +259,8 @@
 
 							<div class="pager-area">
 								<ul class="pager pull-right">
-									<li><a href="{% url 'first-class' %}">ئالدىڭقىسى</a></li>
-									<li><a href="{% url 'second-class' %}">كىيىنكىسى</a></li>
+									<li><a href="{% url 'first-class' %}" style="font-size: medium;">ئالدىڭقىسى</a></li>
+									<li><a href="{% url 'second-class' %}" style="font-size: medium;">كىيىنكىسى</a></li>
 								</ul>
 							</div>
 						</div>

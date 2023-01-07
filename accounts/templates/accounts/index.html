@@ -111,8 +111,10 @@
                                     <ul role="menu" class="sub-menu">
                                         <li><a href="{% url 'introduction' %}">مۇقەددىمە</a></li>
 										<li><a href="{% url 'arduino-ide' %}">ئاردۇينو ئىجادىيەت مۇھىتى</a></li>
-										<li><a href="{% url 'first-class'%}">بىرىنجى دەرس </a></li> 
-										<li><a href="{% url 'second-class' %}">ئىككىنجى دەرس</a></li> 
+										<li><a href="{% url 'electricity' %}">توك ئۇقۇملىرى</a></li>
+										<li><a href="{% url 'first-class'%}">تىنكىركاد (TinkerCad)</a></li> 
+										<li><a href="{% url 'second-class' %}">پروگرامما ئاساسلىرى</a></li> 
+										<li><a href="{% url 'second-class' %}">ئاردۇينو بۇيرۇقلىرى</a></li> 
                                     </ul>
                                 </li> 
 								<li><a href="{% url 'about' %}" style="font-size: x-large;">بىزگە ئائىت</a></li>
@@ -212,18 +214,19 @@
 						</div>
 						<div class="panel panel-default">
 							<div class="panel-heading">									
-								<h4 class="panel-title"><button class="btn btn-link"><a href="{% url 'first-class' %}" style="font-size: x-large;"> بىرىنجى دەرس</a></button></h4>
+								<h4 class="panel-title"><button class="btn btn-link"><a href="{% url 'first-class' %}" style="font-size: x-large;">تىنكىركاد (TinkerCad)</a></button></h4>
+
 							</div>
 						</div>
 						<div class="panel panel-default">
 							<div class="panel-heading">
-								<h4 class="panel-title"><button class="btn btn-link"><a href="{% url 'second-class' %}" style="font-size: x-large;"> ئىككىنجى دەرس</a></button></h4>
+								<h4 class="panel-title"><button class="btn btn-link"><a href="{% url 'second-class' %}" style="font-size: x-large;">پروگرامما ئاساسلىرى</a></button></h4>
 								
 							</div>
 						</div>
 						<div class="panel panel-default">
 							<div class="panel-heading">
-								<h4 class="panel-title"><button class="btn btn-link"><a href="{% url 'digitaloutput' %}" style="font-size: x-large;">ئاساسى بۇيرۇقلار</a></button></h4>
+								<h4 class="panel-title"><button class="btn btn-link"><a href="{% url 'digitaloutput' %}" style="font-size: x-large;">ئاردۇينو بۇيرۇقلىرى</a></button></h4>
 								
 							</div>
 						</div>
@@ -264,19 +267,52 @@
 										</div>
 								</div>
 							</div>
-						
+						</div>
+						<div class="col-sm-4">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<img src="{% static 'images/home/banner/arduino.png' %}" alt="" />
+										<h2>ئاردۇينو ئىجادىيەت مۇھىتى</h2>
+										<a href="{% url 'arduino-ide' %}" class="btn btn-default add-to-cart"><i class="fa fa-star"></i>دەرسنى كۆرۈڭ</a>
+									</div>
+									<div class="product-overlay">
+										<div class="overlay-content">
+											<h1>ئاردۇينو ئىجادىيەت مۇھىتى</h1>
+											<a href="{% url 'arduino-ide' %}" class="btn btn-default add-to-cart"><i class="fa fa-star"></i>دەرسنى كۆرۈڭ</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<img src="{% static 'images/home/banner/electrical.jpg' %}" alt="" />
+										<h2>توك ئۇقۇملىرى</h2>
+										<a href="{% url 'electricity' %}" class="btn btn-default add-to-cart"><i class="fa fa-star"></i>دەرسنى كۆرۈڭ</a>
+									</div>
+									<div class="product-overlay">
+										<div class="overlay-content">
+											<h1>ئاردۇينو ئىجادىيەت مۇھىتى</h1>
+											<a href="{% url 'electricity' %}" class="btn btn-default add-to-cart"><i class="fa fa-star"></i>دەرسنى كۆرۈڭ</a>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 						<div class="col-sm-4">
 							<div class="product-image-wrapper">
 								<div class="single-products">
 									<div class="productinfo text-center">
 										<img src="{% static 'images/home/banner/class1.png' %}" alt="" />
-										<h2>1-دەرس</h2>
+										<h2>تىنكىركاد (TinkerCad)</h2>
 										<a href="{% url 'first-class' %}" class="btn btn-default add-to-cart"><i class="fa fa-star"></i>دەرسنى كۆرۈڭ</a>
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content">
-											<h1>1-دەرس</h1>
+											<h1>تىنكىركاد (TinkerCad)</h1>
 											<a href="{% url 'first-class' %}" class="btn btn-default add-to-cart"><i class="fa fa-star"></i>دەرسنى كۆرۈڭ</a>
 										</div>
 									</div>
@@ -287,14 +323,31 @@
 							<div class="product-image-wrapper">
 								<div class="single-products">
 									<div class="productinfo text-center">
-										<img src="{% static 'images/home/banner/class2.png' %}" alt="" />
-										<h2>2-دەرس</h2>
+										<img src="{% static 'images/home/banner/programming.png' %}" alt="" />
+										<h2>پروگرامما ئاساسلىرى</h2>
 										<a href="{% url 'second-class' %}" class="btn btn-default add-to-cart"><i class="fa fa-star"></i>دەرسنى كۆرۈڭ</a>
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content">
-											<h1>2-دەرس</h1>
+											<h1>پروگرامما ئاساسلىرى</h1>
 											<a href="{% url 'second-class' %}" class="btn btn-default add-to-cart"><i class="fa fa-star"></i>دەرسنى كۆرۈڭ</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<img src="{% static 'images/home/banner/out.png' %}" alt="" />
+										<h2>ئاردۇينو بۇيرۇقلىرى</h2>
+										<a href="{% url 'digitaloutput' %}" class="btn btn-default add-to-cart"><i class="fa fa-star"></i>دەرسنى كۆرۈڭ</a>
+									</div>
+									<div class="product-overlay">
+										<div class="overlay-content">
+											<h1>ئاردۇينو بۇيرۇقلىرى</h1>
+											<a href="{% url 'digitaloutput' %}" class="btn btn-default add-to-cart"><i class="fa fa-star"></i>دەرسنى كۆرۈڭ</a>
 										</div>
 									</div>
 								</div>
