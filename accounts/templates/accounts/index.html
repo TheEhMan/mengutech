@@ -48,7 +48,7 @@
 								<li><a href="https://www.linkedin.com/in/yasin-mamatjan-22599364/"><i class="fa fa-linkedin"></i></a></li>
 								<li><a href="https://scholar.google.ca/citations?user=-8wYvDIAAAAJ&hl=en"><img src="{% static 'images/home/googlescholar.png' %}" alt="" style="max-width: 45px; padding:9px;"></a></li>
 								<li><a href="https://www.uyghurstem.com/"><img src="{% static 'images/home/uyghurstem.png' %}" alt="" style="max-width: 50px; padding-top:9px;"></a></li>
-							</ul>
+						</ul>
 						</div>
 					</div>
 				</div>
@@ -60,7 +60,8 @@
 				<div class="row">
 					<div class="col-sm-4">
 						<div class="logo pull-left">
-							<a href="{% url 'home' %}"><img src="{% static 'images/home/logo.png' %}" alt="" /></a>
+							<a href="{% url 'home' %}"><img src="{% static 'images/home/newlogo.png' %}" alt="" style="max-width:55px;" /></a>
+
 						</div>
 						<div class="btn-group pull-right">
 							<!--<div class="btn-group">
@@ -85,11 +86,11 @@
 					<div class="col-sm-8">
 						<div class="shop-menu pull-right">
 							<ul class="nav navbar-nav">
-								<li><a href="{% url 'about' %}"><i class="fa fa-user"></i> مەڭگۈتەك</a></li>
-								<li><a href="#"><i class="fa fa-star"></i>باشقا مەزمۇنلار</a></li>
-								<li><a href="{% url 'contact' %}"><i class="fa fa-crosshairs"></i>ئالاقىلىشىڭ</a></li>
+								<li><a href="{% url 'about' %}"><p style="font-size:large;"><i class="fa fa-user"></i> مەڭگۈتەك</p></a></li>
+								<li><a href="#"><p style="font-size:large;"><i class="fa fa-star"></i>باشقا مەزمۇنلار</p></a></li>
+								<li><a href="{% url 'contact' %}"><p style="font-size:large;"><i class="fa fa-crosshairs"></i>ئالاقىلىشىڭ</p></a></li>
 
-								<li><a href="https://www.uyghurstem.com/idea_to_prototype/"><i class="fa fa-star"></i>تىزىملىتىڭ</a></li>
+								<li><a href="https://www.uyghurstem.com/idea_to_prototype/"><p style="font-size:large;"><i class="fa fa-star"></i>تىزىملىتىڭ</p> </a></li>
 							</ul>
 						</div>
 					</div>
@@ -362,10 +363,14 @@
 <footer id="footer"><!--Footer-->
 	<div class="footer-top">
 		<div class="container">
+			<a href="{% url 'home' %}"><img src="{% static 'images/home/newlogo.png' %}" alt="" style="max-width:95px; padding-top:20px" /></a>
+
 			<div class="row">
-				<div class="col-sm-5" style="right: -775px;">
+				<a href="{% url 'home' %}"><img src="{% static 'images/home/newlogo.png' %}" alt="" style="max-width:95px; padding-top:20px" /></a>
+
+				<div class="col-sm-5" style="right: -450px;">
 					<div class="companyinfo">
-						<h1><span>مەڭگۈتەك تەربىيەلەش مەركىزى</span></h1>
+						<h1 style="font-size:xx-large;"><span>مەڭگۈتەك تەربىيەلەش مەركىزى</span></h1>
 					</div>
 				</div>
 				<div class="col-sm-3">
