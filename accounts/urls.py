@@ -32,6 +32,7 @@ urlpatterns = [
     path('fourth-class/', views.fourthclass, name="fourth-class"),
     path('contact/', views.contact, name="contact"),
     path('birinji-ders/', views.birinjiders, name="birinji-ders"),
+    path('ikkinji-ders/', views.ikkinjiders, name="ikkinji-ders"),
 
   
     
