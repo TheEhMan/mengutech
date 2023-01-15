@@ -17,6 +17,7 @@ urlpatterns = [
     path('electricity/', views.electricity, name="electricity"),
     path('digitaloutput/', views.digitaloutput, name="digitaloutput"),
     path('rules-and-timeline/', views.rulesandtimeline, name="rules-and-timeline"),
+    path('balilar/', views.balilar, name="balilar"),
     
     
    ###########################end of static pages 

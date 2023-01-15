@@ -38,6 +38,10 @@ def electricity(request):
 def digitaloutput(request):
     context={}
     return render(request, 'accounts/digitaloutput.html', context)
+
+def balilar(request):
+    context={}
+    return render(request, 'accounts/balilar.html', context)
 # end of static pages 
 
 
