@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>مەڭگۈتەك |  بىرىنجى دەرس</title>
+    <title>مەڭگۈتەك | ئۈچىنجى دەرس</title>
     <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
     <link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet">
     <link href="{% static 'css/prettyPhoto.css' %}" rel="stylesheet">
@@ -121,7 +121,7 @@
 										<li><a href="{% url 'ikkinji-ders' %}">ئىككىنجى دەرس</a></li>
 										<li><a href="{% url 'uchinji-ders' %}">ئۈچىنجى دەرس</a></li> 
                                     </ul>
-                                </li>
+                                </li> 
 								<li><a href="{% url 'about' %}" style="font-size: x-large;">بىزگە ئائىت</a></li>
                                 <li><a href="{% url 'rules-and-timeline' %}" style="font-size: x-large;">قائىدە- تۈزۈم</a></li>
 								
@@ -194,23 +194,113 @@
 				</div>
 				<div class="col-sm-9">
 					<div class="blog-post-area">
-						<h1 class="title text-center" style="font-size:xx-large;"><b> بالىلار سەھىپىسى</b></h1>
+						<h1 class="title text-center" style="font-size:xx-large;"><b> ئۈچىنجى دەرس</b></h1>
 						</div>
 					</div><!--/blog-post-area-->
-                    <p style="text-align:right;">.بىز بۇ بەتتە بالىلار ياسىغان لاھىييە ۋە دەرسلەرنى چىقىرىمىز</p>
-                    <iframe width="875" height="432" src="https://www.youtube.com/embed/mI0QZ-1Xy4Q" title="پوتېنسئومىتېر بىلەن چىراق يۇرۇقلىقىنى تەڭشەش" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
+                    
+                    <iframe src="{% static 'pdf/Lecture3.pdf' %}" width="75%" height="600px"></iframe>
+                    <br>
+                    <br>
+                    <br>
+                    <a href="">
+                        <center><iframe width="875" height="422" src="https://www.youtube.com/embed/Y2OQOpLze3M" title="ئىدىيەدىن پروتوتىپقىچە - ئۈچىنجى دەرس" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
+                    </a>
+					<a href="https://www.youtube.com/@mengutech"><p style="text-align:right;">قانىلىمىزغا بېرىڭ Youtube</p></a>
+                    <h2 style="font-size:xx-large;  text-align:right;">تاپشۇرۇق</h2>
+                    <p style="text-align:right;">بىلەن چىراق ياندۇرۇش RGB LED ئىككى تانە </p>
+					<center><img src="{% static 'images/Classes/thirdclasshw.png' %}" alt="" style="max-width:860px; padding:10px;"></center>
+                    
+<!--THIS IS THE COMMENT SECTION , YOU CAN MOVE IT AND POSITION AS YOU WILL-->
+
+{% for x in Comment_list %}
+
+
+<style>
+	.cards {
+	  display: flex;
+	  flex-wrap: wrap;
+	  align-items: stretch;
+	}
+	.card {
+	  flex: 0 0 780px;
+	  margin: 10px;
+	  border: 1px solid #ccc;
+	  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.7);
+	} 
+ 
+	.card .text {
+	  padding: 0 20px 15px;
+	}
+	 
+  </style>
+ 
+		
+  <main class="cards">
+	<article class="card">
+	   
+	  <div class="text">
+		<br>
+	 
+			 <i class="fa fa-user"></i>   {{x}} . <!--<i class="fa fa-envelope-o"></i> {{x.email}} -->.	 <i class="fa fa-location-arrow"></i> {{x.city}} 
+			 <hr>
+
+		<p>{{x.comment_body}}</p>
+	  </div>
+	</article>
+   
+  </main>
+
+ 
+ 
+{% endfor %}
+
+ 
+
+					
+									
+					</div><!--/Response-area--><div class="replay-box">
+						<div class="row">
+							<div class="col-sm-4">
+								<h2>!ئويلىغىڭىزنى يېزىڭ</h2>
+
+								<form method ="post" action="{% url 'uchinji-ders' %}" >
+									{% csrf_token %}
+									<div class="blank-arrow">
+										<label>ئىسىم</label>
+									</div>
+									<span>*</span>
+									<input id="name" name="name" type="text" placeholder="write your name...">
+									<div class="blank-arrow">
+										<label>ئىلخەت</label>
+									</div>
+									<span>*</span>
+									<input type="email" id="email" name="email"placeholder="your email address...">
+									<div class="blank-arrow">
+										<label>شەھەر</label>
+									</div>
+									<input   name="city" type="text"  placeholder="current city...">
+								
+							</div>
+							<div class="col-sm-8">
+								<div class="text-area">
+									<div class="blank-arrow">
+										<label>تەكلىپ/پىكىر</label>
+									</div>
+									<span>*</span>
+									 
+									<textarea id="body" name="body" cols="25" rows="11"  ></textarea>
+									 
+									<button name="submit" type="submit" class="btn btn-primary">ئەۋەتىڭ</button>
+								</div>
+							</div>
+						</div>
+					</div><!--/Repaly Box-->
+                </form>
+            </div>	
+        </div>
+    </div>
+</section>
+
 </br>
 <footer id="footer"><!--Footer-->
     <div class="footer-top">

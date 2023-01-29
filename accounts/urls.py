@@ -24,25 +24,15 @@ urlpatterns = [
     
     
     path('introduction/', views.introduction, name="introduction"),
- 
-    
     path('tinkercad/', views.firstclass, name="first-class"),
     path('programming-basics/', views.secondclass, name="second-class"),
     path('third-class/', views.thirdclass, name="third-class"),
     path('fourth-class/', views.fourthclass, name="fourth-class"),
     path('contact/', views.contact, name="contact"),
+    
     path('birinji-ders/', views.birinjiders, name="birinji-ders"),
     path('ikkinji-ders/', views.ikkinjiders, name="ikkinji-ders"),
-
-  
-    
-    
-
-
-
-
-
-
+    path('uchinji-ders/', views.uchinjiders, name="uchinji-ders"),
 
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 

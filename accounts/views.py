@@ -192,3 +192,16 @@ def ikkinjiders(request):
     #pdf = get_object_or_404(MyModel, pk=pdf_id)
     return render(request, 'accounts/ikkinji-ders.html',  {'Comment_list':Comment_list})    
 
+def uchinjiders(request):
+    if request.method == "POST":
+        name= request.POST.get('name')
+        email= request.POST.get('email')
+        city= request.POST.get('city')
+        body= request.POST.get('body')
+      #change the comment number below and in comment_list  
+        en = comment8(name=name,comment_body=body,email=email,city=city)
+        en.save()
+             
+    Comment_list= comment8.objects.all()
+    #pdf = get_object_or_404(MyModel, pk=pdf_id)
+    return render(request, 'accounts/uchinji-ders.html',  {'Comment_list':Comment_list})    
