@@ -101,32 +101,35 @@
 		<div class="header-bottom"><!--header-bottom-->
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-9">
-						<div class="navbar-header">
+					<div class="col-sm-9 pull-right">
+						<div class="navbar-header pull-right">
 							
 						</div>
-						<div class="mainmenu pull-left">
+						<div class="mainmenu pull-right">
 							<ul class="nav navbar-nav collapse navbar-collapse">
 								<li><a href="{% url 'home' %}" class="active" style="font-size: x-large;">باش بەت</a></li>
 								<li class="dropdown"><a href="#" style="font-size: x-large;">مۇھىم مەزمۇنلار<i class="fa fa-angle-down"></i></a>
-                                    <ul role="menu" class="sub-menu">
-                                        <li><a href="{% url 'introduction' %}">مۇقەددىمە</a></li>
-										<li><a href="{% url 'arduino-ide' %}">ئاردۇينو ئىجادىيەت مۇھىتى</a></li>
-										<li><a href="{% url 'electricity' %}">توك ئۇقۇملىرى</a></li>
-										<li><a href="{% url 'first-class'%}">تىنكىركاد (TinkerCad)</a></li> 
-										<li><a href="{% url 'second-class' %}">پروگرامما ئاساسلىرى</a></li> 
-										<li><a href="{% url 'second-class' %}">ئاردۇينو بۇيرۇقلىرى</a></li> 
+                                    <ul role="menu" class="sub-menu pull-right">
+                                        <li class="pull-right"><a href="{% url 'introduction' %}">مۇقەددىمە</a></li>
+										<li class="pull-right"><a href="{% url 'arduino-ide' %}" >ئاردۇينو ئىجادىيەت مۇھىتى</a></li>
+										<li class="pull-right"><a href="{% url 'electricity' %}">توك ئۇقۇملىرى</a></li>
+										<li class="pull-right"><a href="{% url 'first-class'%}">تىنكىركاد (TinkerCad)</a></li> 
+										<li class="pull-right"><a href="{% url 'second-class' %}" >پروگرامما ئاساسلىرى</a></li> 
+										<li class="pull-right"><a href="{% url 'second-class' %}" >ئاردۇينو بۇيرۇقلىرى</a></li> 
                                     </ul>
                                 </li> 
-                                <li class="dropdown"><a href="#" style="font-size: x-large;">دەرسلەر<i class="fa fa-angle-down"></i></a>
-                                    <ul role="menu" class="sub-menu">
-                                        <li><a href="{% url 'birinji-ders' %}">بىرىنجى دەرس</a></li>
-										<li><a href="{% url 'ikkinji-ders' %}">ئىككىنجى دەرس</a></li>
-										<li><a href="{% url 'uchinji-ders' %}">ئۈچىنجى دەرس</a></li> 
-										<li><a href="{% url 'totinji-ders' %}">تۆتىنچى دەرس</a></li> 
-
+								<!--
+                                <li class="dropdown "><a href="#" style="font-size: x-large;">دەرسلەر<i class="fa fa-angle-down"></i></a>
+                                    <ul role="menu" class="sub-menu pull-right">
+                                        <li class="pull-right"><a href="{% url 'birinji-ders' %}" >بىرىنجى دەرس </a></li>
+									
+										<li class="pull-right"><a href="{% url 'ikkinji-ders' %}">ئىككىنجى دەرس</a></li>
+										
+										<li class="pull-right"><a href="{% url 'uchinji-ders' %}">ئۈچىنجى دەرس</a></li> 
+										
+										<li class="pull-right"><a href="{% url 'totinji-ders' %}">تۆتىنچى دەرس</a></li> 
                                     </ul>
-                                </li> 
+                                </li>--> 
 								<li><a href="{% url 'about' %}" style="font-size: x-large;">بىزگە ئائىت</a></li>
                                 <li><a href="{% url 'rules-and-timeline' %}" style="font-size: x-large;">قائىدە- تۈزۈم</a></li>
 								
