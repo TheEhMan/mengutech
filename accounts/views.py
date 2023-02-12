@@ -42,6 +42,10 @@ def digitaloutput(request):
 def balilar(request):
     context={}
     return render(request, 'accounts/balilar.html', context)
+
+def specialpageone(request):
+    context={}
+    return render(request, 'accounts/specialclassone.html', context)
 # end of static pages 
 
 
