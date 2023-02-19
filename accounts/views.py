@@ -223,3 +223,17 @@ def totinjiders(request):
     Comment_list= comment9.objects.all()
     #pdf = get_object_or_404(MyModel, pk=pdf_id)
     return render(request, 'accounts/totinji-ders.html',  {'Comment_list':Comment_list})    
+
+def bashinjiders(request):
+    if request.method == "POST":
+        name= request.POST.get('name')
+        email= request.POST.get('email')
+        city= request.POST.get('city')
+        body= request.POST.get('body')
+      #change the comment number below and in comment_list  
+        en = comment10(name=name,comment_body=body,email=email,city=city)
+        en.save()
+             
+    Comment_list= comment10.objects.all()
+    #pdf = get_object_or_404(MyModel, pk=pdf_id)
+    return render(request, 'accounts/bashinji-ders.html',  {'Comment_list':Comment_list})
