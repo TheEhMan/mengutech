@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>مەڭگۈتەك | بەشىنجى دەرس</title>
+    <title>مەڭگۈتەك | ئالتىنچى دەرس</title>
     <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
     <link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet">
     <link href="{% static 'css/prettyPhoto.css' %}" rel="stylesheet">
@@ -195,14 +195,29 @@
 				</div>
 				<div class="col-sm-9">
 					<div class="blog-post-area">
-						<h1 class="title text-center" style="font-size:xx-large;"><b> بەشىنجى دەرس</b></h1>
+						<h1 class="title text-center" style="font-size:xx-large;"><b> ئالتىنچى دەرس</b></h1>
 						</div>
 					</div><!--/blog-post-area-->
-                    <iframe src="{% static 'pdf/Lecture5.pdf' %}" width="75%" height="600px"></iframe>
-                    <iframe width="817" height="480" src="https://www.youtube.com/embed/eoeycFsXeJE" title="ئىدىيەدىن پروتوتىپقىچە - تۆتىنجى دەرس" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    <p style="text-align:right;"><a href="{% url 'arduino-ide' %}">غا ئائىت جىقاراق ئۇقۇش ئۈچۈن بۇ ئۇلانمىن بېسىڭ Arduino IDE</a></p>
-                    <h2 style="text-align:right">ماشىنا توختىتىش ياردەمچىسىغا ئائىت قەغەز<h2>
-                        <iframe src="{% static 'pdf/Car_Parking_Assistant.pdf' %}" width="75%" height="600px"></iframe>
+                    <iframe width="768" height="480" src="https://www.youtube.com/embed/-_gd8yGHI3A" title="كومپيۇتېر پروگراممىسى ھەققىدە" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <p style="text-align:right;">
+						26-فېۋرالدىكى دەرس ھەققىدە:
+						بۇ دەرستە ئاۋۋال پروگرامما، كوميپيۇتېر پروگراممىسى، كومپيۇتېر پروگرامما تۈزۈش ئۇقۇملىرى ھەققىدە ئاساىسي چۈشەنچىلەرگە ئىگە بولۇشقا تىرىشتۇق،
+						<br>
+						<br>
+						ئۇنىڭدىن كېيىن LED چىراغلاردىن تۈزۈلگەن ۋىۋىسكا (تاختا)نى مىسالغا ئېلىپ كومپيۇتېر پروگرامما تىللىرىنىڭ تەكرارلىنىدىغان ۋە تەرتىپلىك داۋاملىشىدىغان ئىشلارنى ئىنتايىن قالتىىس ئۇسۇلدا بىر تەرەپ قىلغىلى بولىدىغانلىقىنى كۆرۈپ ئۆتتۇق.
+						<br>
+						<br>
+						
+						ئۇنىڭدىن ئاخىرىغا ئۇلاپ كومپيۇتېر پروگرامما تىللىرىىكى كودلارنىڭ قانداق تەرتىپتە ئىجرا بولىدىغانلىقىنى، شەرتلىك قۇرۇلمىنى (conditional structure)، تەكرارلىق (loops) ۋە ئۆزگەرگۈچى (variable) ئۇقۇملىرىنى بۆلەك ئاساسىدىكى پروگرامما تىللىرىدىن بىرى بولغان Scratch ئارقىلىق ئەمەلىي كۆرۈپ باقتۇق، 
+						<br>
+						<br>
+						
+						ئۇنىڭدىن باشقا يەنە يېقىنقى ئۈچ ئايدىن بېرى ئىنتايىن قىززىق نۇقتا بولۇۋاتقان ChatGPT نىڭ ئۇيغۇرچە ئەلالاشتۇرۇلغان نۇسخىسىنى ئەمەلىي سىناپ كومپيۇتېر پروگراممىلىرىغا بولغان قىزىقىشىمىزنى ئاشۇردۇق.
+						<br>
+						<br>
+						
+						ئەڭ ئاخىرىدا يۇقىرىدا ئۆگەنگەن ئۇقۇملارنى Tinkercad تە RGB LED ۋە Servo موتور ئارقىلىق سىناپ باقتۇق.
+						</p>
                         
 <!--THIS IS THE COMMENT SECTION , YOU CAN MOVE IT AND POSITION AS YOU WILL-->
 
@@ -257,7 +272,7 @@
 							<div class="col-sm-4">
 								<h2>!ئويلىغىڭىزنى يېزىڭ</h2>
 
-								<form method ="post" action="{% url 'bashinji-ders' %}" >
+								<form method ="post" action="{% url 'altinji-ders' %}" >
 									{% csrf_token %}
 									<div class="blank-arrow">
 										<label>ئىسىم</label>

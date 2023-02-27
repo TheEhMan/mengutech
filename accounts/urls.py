@@ -36,6 +36,7 @@ urlpatterns = [
     path('uchinji-ders/', views.uchinjiders, name="uchinji-ders"),
     path('totinji-ders/', views.totinjiders, name="totinji-ders"),
     path('bashinji-ders/', views.bashinjiders, name="bashinji-ders"),
+    path('altinji-ders/', views.altinjiders, name="altinji-ders"),
 
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
