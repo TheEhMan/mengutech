@@ -46,6 +46,10 @@ def balilar(request):
 def specialpageone(request):
     context={}
     return render(request, 'accounts/specialclassone.html', context)
+
+def google_classroom(request):
+    context={}
+    return render(request, 'accounts/google_classroom.html', context)
 # end of static pages 
 
 

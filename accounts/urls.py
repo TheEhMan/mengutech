@@ -19,6 +19,7 @@ urlpatterns = [
     path('rules-and-timeline/', views.rulesandtimeline, name="rules-and-timeline"),
     path('balilar/', views.balilar, name="balilar"),
     path('special-class-one/', views.specialpageone, name="special-class-one"),
+    path('google-classroom/', views.google_classroom, name="google_classroom"),
     
     
    ###########################end of static pages 
