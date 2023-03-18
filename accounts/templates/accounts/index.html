@@ -117,6 +117,7 @@
 										<li class="pull-right"><a href="{% url 'first-class'%}">تىنكىركاد (TinkerCad)</a></li> 
 										<li class="pull-right"><a href="{% url 'second-class' %}" >پروگرامما ئاساسلىرى</a></li> 
 										<li class="pull-right"><a href="{% url 'second-class' %}" >ئاردۇينو بۇيرۇقلىرى</a></li> 
+										<li class="pull-right"><a href="{% url 'google_classroom' %}" >تاپشۇرۇقنى ئەۋەتىش</a></li> 
                                     </ul>
                                 </li> 
 								<!--
@@ -244,6 +245,12 @@
 								
 							</div>
 						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title"><button class="btn btn-link"><a href="{% url 'google_classroom' %}" style="font-size: x-large;">تاپشۇرۇقنى ئەۋەتىش</a></button></h4>
+								
+							</div>
+						</div>
 					</div><!--/category-products-->
 					<div class="brands_products"><!--brands_products-->
 						<h2 style="font-size: x-large;">پايدىلىق ئۇلانمىلار</h2>
@@ -362,6 +369,23 @@
 										<div class="overlay-content">
 											<h1>ئاردۇينو بۇيرۇقلىرى</h1>
 											<a href="{% url 'digitaloutput' %}" class="btn btn-default add-to-cart"><i class="fa fa-star"></i>دەرسنى كۆرۈڭ</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<img src="{% static 'images/home/banner/classroom.png' %}" alt="" />
+										<h2>تاپشۇرۇقنى ئەۋەتىش</h2>
+										<a href="{% url 'google_classroom' %}" class="btn btn-default add-to-cart"><i class="fa fa-star"></i>دەرسنى كۆرۈڭ</a>
+									</div>
+									<div class="product-overlay">
+										<div class="overlay-content">
+											<h1>تاپشۇرۇقنى ئەۋەتىش</h1>
+											<a href="{% url 'google_classroom' %}" class="btn btn-default add-to-cart"><i class="fa fa-star"></i>دەرسنى كۆرۈڭ</a>
 										</div>
 									</div>
 								</div>
@@ -493,6 +517,24 @@
 											<div class="overlay-content">
 												<h1>يەتتىنجى دەرس</h1>
 												<a href="{% url 'yettinji-ders' %}" class="btn btn-default add-to-cart"><i class="fa fa-star"></i> دەرسنى كۆرۈڭ</a>
+											</div>
+										</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+										<div class="productinfo text-center">
+											<img src="{% static 'images/home/banner/ders8.jpg' %}" alt="" />
+											<h2>سەككىزىنجى دەرس</h2>
+											
+											<a href="{% url 'sekkizinji-ders' %}" class="btn btn-default add-to-cart"><i class="fa fa-star"></i>دەرسنى كۆرۈڭ</a>
+										</div>
+										<div class="product-overlay">
+											<div class="overlay-content">
+												<h1>سەككىزىنجى دەرس</h1>
+												<a href="{% url 'sekkizinji-ders' %}" class="btn btn-default add-to-cart"><i class="fa fa-star"></i> دەرسنى كۆرۈڭ</a>
 											</div>
 										</div>
 								</div>
