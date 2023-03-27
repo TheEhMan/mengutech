@@ -212,7 +212,12 @@
                     <p style="text-align:right;"><a href="{% url 'arduino-ide' %}">غا ئائىت جىقاراق ئۇقۇش ئۈچۈن بۇ ئۇلانمىن بېسىڭ Arduino IDE</a></p>
                     <h2 style="text-align:right">ماشىنا توختىتىش ياردەمچىسىغا ئائىت قەغەز<h2>
                         <iframe src="{% static 'pdf/Car_Parking_Assistant.pdf' %}" width="75%" height="600px"></iframe>
-                        
+                        <div class="pager-area">
+							<ul class="pager pull-right">
+								<li><a href="{% url 'totinji-ders' %}">ئالدىڭقىسى</a></li>
+								<li><a href="{% url 'altinji-ders' %}">كىيىنكىسى</a></li>
+							</ul>
+						</div>
 <!--THIS IS THE COMMENT SECTION , YOU CAN MOVE IT AND POSITION AS YOU WILL-->
 
 {% for x in Comment_list %}

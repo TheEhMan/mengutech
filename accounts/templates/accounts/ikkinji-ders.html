@@ -219,7 +219,12 @@
                         <center><iframe width="694" height="480" src="https://www.youtube.com/embed/bk9FbS-0VyY" title="ئىدىيەدىن پروتوتىپقىچە - ئىككىنجى دەرس" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
                     </a>
 					<a href="https://www.youtube.com/@mengutech"><p style="text-align:right;">قانىلىمىزغا بېرىڭ Youtube</p></a>
-                    
+                    <div class="pager-area">
+						<ul class="pager pull-right">
+							<li><a href="{% url 'birinji-ders' %}">ئالدىڭقىسى</a></li>
+							<li><a href="{% url 'uchinji-ders' %}">كىيىنكىسى</a></li>
+						</ul>
+					</div>
 <!--THIS IS THE COMMENT SECTION , YOU CAN MOVE IT AND POSITION AS YOU WILL-->
 
 {% for x in Comment_list %}

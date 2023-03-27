@@ -222,7 +222,12 @@
                     <h2 style="font-size:xx-large;  text-align:right;">تاپشۇرۇق</h2>
                     <p style="text-align:right;">بىلەن چىراق ياندۇرۇش RGB LED ئىككى تانە </p>
 					<center><img src="{% static 'images/Classes/thirdclasshw.png' %}" alt="" style="max-width:860px; padding:10px;"></center>
-                    
+                    <div class="pager-area">
+						<ul class="pager pull-right">
+							<li><a href="{% url 'ikkinji-ders' %}">ئالدىڭقىسى</a></li>
+							<li><a href="{% url 'totinji-ders' %}">كىيىنكىسى</a></li>
+						</ul>
+					</div>
 <!--THIS IS THE COMMENT SECTION , YOU CAN MOVE IT AND POSITION AS YOU WILL-->
 
 {% for x in Comment_list %}
