@@ -325,3 +325,17 @@ def onbirinjiders(request):
     Comment_list= comment16.objects.all()
     #pdf = get_object_or_404(MyModel, pk=pdf_id)
     return render(request, 'accounts/onbirinji-ders.html',  {'Comment_list':Comment_list})
+
+def onikkinjiders(request):
+    if request.method == "POST":
+        name= request.POST.get('name')
+        email= request.POST.get('email')
+        city= request.POST.get('city')
+        body= request.POST.get('body')
+      #change the comment number below and in comment_list  
+        en = comment17(name=name,comment_body=body,email=email,city=city)
+        en.save()
+             
+    Comment_list= comment17.objects.all()
+    #pdf = get_object_or_404(MyModel, pk=pdf_id)
+    return render(request, 'accounts/onikkinji-ders.html',  {'Comment_list':Comment_list})
