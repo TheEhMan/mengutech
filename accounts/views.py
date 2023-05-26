@@ -367,3 +367,17 @@ def ontotinjiders(request):
     Comment_list= comment19.objects.all()
     #pdf = get_object_or_404(MyModel, pk=pdf_id)
     return render(request, 'accounts/ontotinji-ders.html',  {'Comment_list':Comment_list})
+
+def onbashinjiders(request):
+    if request.method == "POST":
+        name= request.POST.get('name')
+        email= request.POST.get('email')
+        city= request.POST.get('city')
+        body= request.POST.get('body')
+      #change the comment number below and in comment_list  
+        en = comment20(name=name,comment_body=body,email=email,city=city)
+        en.save()
+             
+    Comment_list= comment20.objects.all()
+    #pdf = get_object_or_404(MyModel, pk=pdf_id)
+    return render(request, 'accounts/onbashinji-ders.html',  {'Comment_list':Comment_list})
