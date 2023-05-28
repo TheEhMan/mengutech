@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>مەڭگۈتەك | ئون بەشىنجى دەرس</title>
+    <title>مەڭگۈتەك | ئون ئالتىنجى دەرس</title>
     <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
     <link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet">
     <link href="{% static 'css/prettyPhoto.css' %}" rel="stylesheet">
@@ -207,14 +207,14 @@
 				</div>
 				<div class="col-sm-9">
 					<div class="blog-post-area">
-						<h1 class="title text-center" style="font-size:xx-large;"><b> ئون بەشىنجى دەرس</b></h1>
+						<h1 class="title text-center" style="font-size:xx-large;"><b> ئون ئالتىنجى دەرس</b></h1>
 						</div>
 					</div><!--/blog-post-area-->
                     
-                    <iframe src="{% static 'pdf/Lecture15.pdf' %}" width="75%" height="600px"></iframe>
+                    <iframe src="{% static 'pdf/Lecture16.pdf' %}" width="75%" height="600px"></iframe>
                     <br>
                     <a href="">
-                        <center><iframe width="853" height="480" src="https://www.youtube.com/embed/VzuWRfd7Q7c" title="ئىدىيەدىن پروتوتىپقىچە - ئون بەشىنجى دەرس" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
+                        <center><iframe width="876" height="423" src="https://www.youtube.com/embed/YD5XzsyZmaI" title="ئىدىيەدىن پروتوتىپقىچە - ئون ئالتىنجى دەرس" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
                     </a>
                     <br>
                     <a href="">
@@ -222,11 +222,11 @@
                     </a>
 					<a href="https://www.youtube.com/@mengutech"><p style="text-align:right;">قانىلىمىزغا بېرىڭ Youtube</p></a>
                     
-                    <h1 style="text-align:right;"> .بىز بۇ دەرستە كۇنۇپكا تاختىسىنى ئىشىلتىشنى ئۆگەندۇق</h1>
+                    <h1 style="text-align:right;"> </h1>
                     <div class="pager-area">
                         <ul class="pager pull-right">
-                            <li><a href="{% url 'ontotinji-ders' %}">ئالدىڭقىسى</a></li>
-							<li><a href="{% url 'onaltinji-ders' %}">كىيىنكىسى</a></li>
+                            <li><a href="{% url 'onbashinji-ders' %}">ئالدىڭقىسى</a></li>
+							<!--<li><a href="{% url 'onuchinji-ders' %}">كىيىنكىسى</a></li>-->
                         </ul>
                     </div>
 <!--THIS IS THE COMMENT SECTION , YOU CAN MOVE IT AND POSITION AS YOU WILL-->
@@ -282,7 +282,7 @@
 							<div class="col-sm-4">
 								<h2>!ئويلىغىڭىزنى يېزىڭ</h2>
 
-								<form method ="post" action="{% url 'onbashinji-ders' %}" >
+								<form method ="post" action="{% url 'onaltinji-ders' %}" >
 									{% csrf_token %}
 									<div class="blank-arrow">
 										<label>ئىسىم</label>

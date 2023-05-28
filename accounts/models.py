@@ -222,3 +222,23 @@ class comment20(models.Model):
     
     def __str__(self):
         return  self.name
+
+class comment21(models.Model):
+   
+    name = models.CharField(max_length=200)
+    comment_body= models.TextField()
+    email = models.CharField(max_length=100)
+    city = models.CharField(max_length=100)
+    
+    def __str__(self):
+        return  self.name
+    
+class comment22(models.Model):
+   
+    name = models.CharField(max_length=200)
+    comment_body= models.TextField()
+    email = models.CharField(max_length=100)
+    city = models.CharField(max_length=100)
+    
+    def __str__(self):
+        return  self.name
