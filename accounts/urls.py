@@ -48,6 +48,7 @@ urlpatterns = [
     path('ontotinji-ders/', views.ontotinjiders, name="ontotinji-ders"),
     path('onbashinji-ders/', views.onbashinjiders, name="onbashinji-ders"),
     path('onaltinji-ders/', views.onaltinjiders, name="onaltinji-ders"),
+    path('onyettinji-ders/', views.onyettinjiders, name="onyettinji-ders"),
 
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
