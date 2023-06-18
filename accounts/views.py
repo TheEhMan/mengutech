@@ -390,3 +390,6 @@ def onyettinjiders(request):
 
 def onsekkizinjiders(request):
     return render(request, 'accounts/onsekkizinji-ders.html',  {})
+
+def ontoqquzinjiders(request):
+    return render(request, 'accounts/ontoqquzinji-ders.html',  {})
