@@ -393,3 +393,9 @@ def onsekkizinjiders(request):
 
 def ontoqquzinjiders(request):
     return render(request, 'accounts/ontoqquzinji-ders.html',  {})
+
+def description(request):
+    return render(request, 'accounts/description.html',  {})
+
+def descriptionuy(request):
+    return render(request, 'accounts/descriptionuy.html',  {})

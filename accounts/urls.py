@@ -20,6 +20,8 @@ urlpatterns = [
     path('balilar/', views.balilar, name="balilar"),
     path('special-class-one/', views.specialpageone, name="special-class-one"),
     path('google-classroom/', views.google_classroom, name="google_classroom"),
+    path('descriptionuy/', views.descriptionuy, name="descriptionuy"),
+    path('description/', views.description, name="description"),
     
     
    ###########################end of static pages 
