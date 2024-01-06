@@ -50,6 +50,10 @@ def specialpageone(request):
 def google_classroom(request):
     context={}
     return render(request, 'accounts/google_classroom.html', context)
+
+def mengutech_second(request):
+    context={}
+    return render(request, 'accounts/mengutech_second/mengutech_second.html', context)
 # end of static pages 
 
 
