@@ -55,6 +55,10 @@ def mengutech_second(request):
     context={}
     return render(request, 'accounts/mengutech_second/mengutech_second.html', context)
 
+def second_second(request):
+    context={}
+    return render(request, 'accounts/mengutech_second/second_second.html', context)
+
 def second_first(request):
     if request.method == "POST":
         name= request.POST.get('name')
