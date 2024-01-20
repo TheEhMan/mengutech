@@ -53,7 +53,10 @@ urlpatterns = [
     path('onyettinji-ders/', views.onyettinjiders, name="onyettinji-ders"),
     path('onsekkizinji-ders/', views.onsekkizinjiders, name="onsekkizinji-ders"),
     path('ontoqquzinji-ders/', views.ontoqquzinjiders, name="ontoqquzinji-ders"),
+
+
     path('mengutech_second/', views.mengutech_second, name="mengutech_second"),
+    path('mengutech_second_first/', views.second_first, name="second_first"),
 
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
