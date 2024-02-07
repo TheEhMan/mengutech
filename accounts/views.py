@@ -63,6 +63,10 @@ def second_third(request):
     context={}
     return render(request, 'accounts/mengutech_second/second_third.html', context)
 
+def second_fourth(request):
+    context={}
+    return render(request, 'accounts/mengutech_second/second_fourth.html', context)
+
 def second_first(request):
     if request.method == "POST":
         name= request.POST.get('name')
