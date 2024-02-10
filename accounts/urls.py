@@ -60,6 +60,7 @@ urlpatterns = [
     path('mengutech_second_seoncd/', views.second_second, name="second_second"),
     path('mengutech_second_third/', views.second_third, name="second_third"),
     path('mengutech_second_fourth/', views.second_fourth, name="second_fourth"),
+    path('mengutech_second_fifth/', views.second_fifth, name="second_fifth"),
 
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
