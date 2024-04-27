@@ -75,6 +75,10 @@ def second_seventh(request):
     context={}
     return render(request, 'accounts/mengutech_second/second_seventh.html', context)
 
+def second_eighth(request):
+    context={}
+    return render(request, 'accounts/mengutech_second/second_eighth.html', context)
+
 def second_ninth(request):
     context={}
     return render(request, 'accounts/mengutech_second/second_ninth.html', context)
