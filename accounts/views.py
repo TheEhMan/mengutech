@@ -91,6 +91,10 @@ def second_eleventh(request):
     context={}
     return render(request, 'accounts/mengutech_second/second_eleventh.html', context)
 
+def second_twelfth(request):
+    context={}
+    return render(request, 'accounts/mengutech_second/second_twelfth.html', context)
+
 def second_first(request):
     if request.method == "POST":
         name= request.POST.get('name')
