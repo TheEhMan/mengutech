@@ -451,3 +451,28 @@ def description(request):
 
 def descriptionuy(request):
     return render(request, 'accounts/descriptionuy.html',  {})
+
+################Bilim Humarlar################
+def bilimhumarlar_index(request):
+    return render(request, 'accounts/bilimhumarlar/index.html',  {})
+
+def bilimhumarlar_contact(request):
+    return render(request, 'accounts/bilimhumarlar/contact.html',  {})
+
+def bilimhumarlar_anatil(request):
+    return render(request, 'accounts/bilimhumarlar/dersler/anatil.html',  {})
+
+def bilimhumarlar_iman(request):
+    return render(request, 'accounts/bilimhumarlar/dersler/iman.html',  {})
+
+def bilimhumarlar_tajweed(request):
+    return render(request, 'accounts/bilimhumarlar/dersler/tajweed.html',  {})
+
+def bilimhumarlar_rohi(request):
+    return render(request, 'accounts/bilimhumarlar/dersler/rohi.html',  {})
+
+def bilimhumarlar_saghlamliq(request):
+    return render(request, 'accounts/bilimhumarlar/dersler/saghlamliq.html',  {})
+
+def bilimhumarlar_benglish(request):
+    return render(request, 'accounts/bilimhumarlar/dersler/benglish.html',  {})

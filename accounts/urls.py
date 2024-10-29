@@ -68,6 +68,18 @@ urlpatterns = [
     path('mengutech_second_eleventh/', views.second_eleventh, name="second_eleventh"),
     path('mengutech_second_twelfth/', views.second_twelfth, name="second_twelfth"),
     path('mengutech_second_therteenth/', views.second_therteenth, name="second_therteenth"),
+    
+
+    path('bilimhumarlar/', views.bilimhumarlar_index, name="bilimhumarlar_index"),
+    path('bilimhumarlar_contact/', views.bilimhumarlar_contact, name="bilimhumarlar_contact"),
+
+    path('bilimhumarlar_anatil/', views.bilimhumarlar_anatil, name="bilimhumarlar_anatil"),
+    path('bilimhumarlar_tajweed/', views.bilimhumarlar_tajweed, name="bilimhumarlar_tajweed"),
+    path('bilimhumarlar_iman/', views.bilimhumarlar_iman, name="bilimhumarlar_iman"),
+    path('bilimhumarlar_rohi_saghlamliq/', views.bilimhumarlar_rohi, name="bilimhumarlar_rohi"),
+    path('bilimhumarlar_saghlamliq/', views.bilimhumarlar_saghlamliq, name="bilimhumarlar_saghlamliq"),
+    path('bilimhumarlar_benglish/', views.bilimhumarlar_benglish, name="bilimhumarlar_benglish"),
+
 
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
