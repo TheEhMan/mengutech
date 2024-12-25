@@ -1,0 +1,16 @@
+version: 0.0
+os: linux
+files:
+source: ./
+destination: ./home/ec2/mengutech
+hooks:
+AfterInstall:
+ location: scripts/afterinstall.sh
+   timeout: 300
+   runas: root
+
+ApplicationStart:
+ # Start the Django application
+ - location: scripts/application_start.sh
+   timeout: 300
+   runas: root
